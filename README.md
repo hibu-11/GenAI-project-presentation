@@ -214,24 +214,6 @@ High Quality │     CodeLlama ●
 
 ---
 
-##  LoRA Efficiency
-
-### Parameter-Efficient Fine-Tuning
-
-**LoRA Results:**
-
-| Approach | Parameters | Performance | Training Time |
-|----------|------------|-------------|---------------|
-| Full Fine-tuning | 100% | 58.3 BLEU | 12 hours |
-| LoRA (r=8) | **0.1%** | 55.4 BLEU | 4 hours |
-
-**Key Insights:**
--  95% of full fine-tuning performance
--  99.9% fewer trainable parameters
--  3x faster training
--  Practical for limited compute resources
-
----
 
 ##  Language-Specific Performance
 
@@ -247,24 +229,6 @@ High Quality │     CodeLlama ●
 | PHP | CodeBERT | 43.8 | Limited samples |
 
 **Bias Alert:** Python performance 15% better due to dataset composition (42% Python)
-
----
-
-##  Human Evaluation
-
-### Qualitative Assessment (50 samples)
-
-| Criterion | CodeBERT | CodeLlama | CodeT5 |
-|-----------|----------|-----------|--------|
-| **Coherence** (1-5) | 3.8 | 4.2 | **4.5** |
-| **Accuracy** (1-5) | 3.9 | 4.3 | **4.6** |
-| **Completeness** (1-5) | 3.5 | 4.1 | **4.4** |
-| **Usefulness** (1-5) | 3.7 | 4.2 | **4.5** |
-
-**Evaluator Feedback:**
-- CodeBERT: "Concise but sometimes too brief"
-- CodeLlama: "Detailed but occasionally verbose"
-- CodeT5: "Best balance of detail and clarity"
 
 ---
 
@@ -353,11 +317,7 @@ High Quality │     CodeLlama ●
    - Model size vs. Performance
    - Training cost vs. Inference cost
 
-3. **LoRA is Effective**
-   - 95% performance with 0.1% parameters
-   - Makes fine-tuning accessible
-
-4. **Practical Deployment Requires Care**
+3. **Practical Deployment Requires Care**
    - Human review essential
    - Ethical considerations matter
    - Bias mitigation needed
@@ -375,7 +335,6 @@ High Quality │     CodeLlama ●
 **Answer:**
 - **CodeT5 (encoder-decoder) is optimal** for production use
 - Achieves best quality (58.3 BLEU) with reasonable speed (68ms)
-- LoRA enables efficient fine-tuning (95% performance, 0.1% parameters)
 
 **Broader Impact:**
 - Demonstrates importance of architecture choice
